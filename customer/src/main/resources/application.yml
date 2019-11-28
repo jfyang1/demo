@@ -1,0 +1,15 @@
+server:
+  port: 8981
+spring:
+  application:
+    name: customer
+#eureka:
+#  client:
+#    service-url: ${DISCOVERY-SERVER-URL:http://localhost:8988/eureka/}
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY-SERVER-URL:http://localhost:8988/eureka/}

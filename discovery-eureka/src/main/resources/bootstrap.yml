@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: eureka
+  cloud:
+    config:
+#      可以通过运行参数来传递CONFIG_SERVER_URL地址来获取不同环境配置信息 没有就取默认值
+      url: ${CONFIG_SERVER_URL:http://localhost:8888}
